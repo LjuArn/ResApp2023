@@ -6,4 +6,10 @@ public interface UserService {
     boolean isNameExistMetod(String username);
 
     void registerUser(UserServiceModel userServiceModel);
+
+    UserServiceModel findUserByUsernameAndPassword(String username, String password);
+
+    void loginUser(Long id, String username);
+
+    void logOut();
 }
