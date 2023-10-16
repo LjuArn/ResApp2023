@@ -12,7 +12,6 @@ public class OfferEntity extends BaseEntity {
     @Column(nullable = false)
     private BigDecimal price;
 
-
     @ManyToOne
     @JoinColumn(name = "condition_id")
     private ConditionEntity condition;

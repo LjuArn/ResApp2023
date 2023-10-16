@@ -1,5 +1,6 @@
 package com.example.resapp2023.domain.serviceModel;
 
+import com.example.resapp2023.domain.entity.ConditionEntity;
 import com.example.resapp2023.domain.entity.enums.ConditionsEnums;
 
 import java.math.BigDecimal;
@@ -9,7 +10,7 @@ public class OfferServiceModel {
     private Long id;
     private String description;
     private BigDecimal price;
-    private ConditionsEnums condition;
+    private ConditionsEnums conditionName;
 
     public OfferServiceModel() {
     }
@@ -41,12 +42,12 @@ public class OfferServiceModel {
         return this;
     }
 
-    public ConditionsEnums getCondition() {
-        return condition;
+    public ConditionsEnums getConditionName() {
+        return conditionName;
     }
 
-    public OfferServiceModel setCondition(ConditionsEnums condition) {
-        this.condition = condition;
+    public OfferServiceModel setConditionName(ConditionsEnums conditionName) {
+        this.conditionName = conditionName;
         return this;
     }
 }

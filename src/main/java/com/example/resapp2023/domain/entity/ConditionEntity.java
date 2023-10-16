@@ -10,7 +10,7 @@ import java.util.Set;
 @Table(name = "conditions")
 public class ConditionEntity extends BaseEntity{
 
-    @Column(unique = true, nullable = false)
+    //@Column(unique = true, nullable = false)
     @Enumerated(EnumType.STRING)
     private ConditionsEnums name;
 
@@ -38,8 +38,6 @@ public class ConditionEntity extends BaseEntity{
         this.description = description;
         return this;
     }
-
-
 }
 //•	Has a Condition name (unique, not null)
 //o	an option between (EXCELLENT, GOOD, ACCEPTABLE)

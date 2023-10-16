@@ -32,12 +32,15 @@ public class ConditionServiceImpl implements ConditionService {
                         case GOOD -> condition.setDescription("Some signs of wear and tear or minor defects");
                         case EXCELLENT -> condition.setDescription("In perfect condition");
                         case ACCEPTABLE -> condition.setDescription("The item is fairly worn but continues to function properly");
-
                     }
                     conditionRepository.save(condition);
-
                 });
 
+    }
+
+    @Override
+    public ConditionEntity findByConditionNameEnum(ConditionsEnums conditionsEnums) {
+        return conditionRepository.findByName(conditionsEnums).orElse(null);
     }
 
 }

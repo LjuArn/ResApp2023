@@ -50,4 +50,9 @@ public class UserServiceImpl implements UserService {
     public void logOut() {
         currentUser.setId(null).setUsername(null);
     }
+
+    @Override
+    public UserEntity findUserById(Long id) {
+        return userRepository.findById(id).orElse(null);
+    }
 }
