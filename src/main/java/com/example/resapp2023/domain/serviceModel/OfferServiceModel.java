@@ -1,8 +1,7 @@
 package com.example.resapp2023.domain.serviceModel;
 
-import com.example.resapp2023.domain.entity.ConditionEntity;
-import com.example.resapp2023.domain.entity.enums.ConditionsEnums;
 
+import com.example.resapp2023.domain.entity.enums.ConditionsEnums;
 import java.math.BigDecimal;
 
 public class OfferServiceModel {
