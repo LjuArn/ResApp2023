@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
+
 <head th:replace="~{fragments/commons::head}"></head>
 <body>
 <header th:replace="~{fragments/commons::nav}"></header>
@@ -40,9 +42,9 @@
             </div>
             <input th:field="*{email}"
                    th:errorclass="'is-invalid bg-danger'"
-                    type="email"
-                    class="form-control"
-                    id="email">
+                   type="email"
+                   class="form-control"
+                   id="email">
             <small class="invalid-feedback text-danger">Email cannot be empty!</small>
         </div>
 
@@ -50,11 +52,11 @@
             <div class="label-holder text-white textCol d-flex justify-content-center">
                 <label for="password" class="h4 mb-2">Password</label>
             </div>
-            <input  th:field="*{password}"
-                    th:errorclass="'is-invalid bg-danger'"
-                    type="password"
-                    class="form-control"
-                    id="password">
+            <input th:field="*{password}"
+                   th:errorclass="'is-invalid bg-danger'"
+                   type="password"
+                   class="form-control"
+                   id="password">
             <small class="invalid-feedback text-danger">Password length must be between 3 and 20 characters</small>
         </div>
 
@@ -62,9 +64,9 @@
             <div class="label-holder text-white textCol d-flex justify-content-center">
                 <label for="confirmPassword" class="h4 mb-2">Confirm Password</label>
             </div>
-            <input  th:field="*{confirmPassword}"
-                    th:errorclass="'is-invalid bg-danger'"
-                    type="password"
+            <input th:field="*{confirmPassword}"
+                   th:errorclass="'is-invalid bg-danger'"
+                   type="password"
                    class="form-control"
                    id="confirmPassword">
             <small class="invalid-feedback text-danger">Password length must be between 3 and 20 characters</small>
